@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #181818;
+    color: #fff;
+}
+.main1{
+    padding: 10px 10%;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    font-weight: 500;
+}
+nav img{
+    width: 210px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: cyan;
+    position:absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 15%;
+    font-size: 30px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header-text h5{
+    text-align: center;
+}
+.header-text h1{
+    font-size: 55px;
+    margin-top: 20px;
+    text-align: center;
+    margin:15px;
+}
+.header-text h4{
+    text-align: center;
+    font-size: 28px;
+}
+.header-text img{
+    width: 220px;
+    border-radius: 8px;
+    margin-right: 100px;
+}
+.header-button{
+    display: flex;
+    justify-content:space-evenly
+}
+.header-text button{
+    justify-content: space-between;
+    padding: 12px;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+    border-style: none;
+}
+.header-button .button1{
+    margin-right: -70px;
+}
+.header-social{
+    justify-content: center;
+    display: inline;
+    margin-left: 200px;
+}
+.header-social1{
+    margin-top: 20px;
+}
+.header-social img{
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+/*About Section*/
+#about{
+    height: 95vh;
+}
+#about p{
+    text-align: center;
+    opacity: 80%;
+}
+#about h1{
+    text-align: center;
+    font-size: 50px;
+}
+section{
+    height: 100vh;
+}
+.main2{
+    display: flex;
+    flex-direction: column;
+}
+.main3{
+    display: flex;
+    justify-content: space-evenly;
+}
+.about-div{
+    display: flex;
+    flex-direction: column;
+}
+.about1 img{
+    width: 20px;
+    background-color: white;
+}
+.about2 img{
+    width: 20px;
+    background-color: white;
+}
+.about1{
+    margin-left: 100px;
+}
+.main2 .about1, .about2{
+    text-align: center;
+    border-style: groove;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 3% 10%;
+    margin-top: 7%;
+
+}
+#about .about_me p{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    font-size: 20px;
+    margin-top:7%;
+    margin-left: 20%;
+    width: 60%;
+}
+/*Experience section*/
+#experience{
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+#experience p{
+    font-size: 25px;
+    opacity: 80%;
+}
+#experience h1{
+    font-size: 50px;
+}
+.experience_div1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 10%;
+}
+.experience_div2{
+    border-style: groove;
+    border-radius: 25px;
+    border-color: rgb(163, 163, 163);
+    color: black;
+    background-color: whitesmoke;
+    padding: 20px 20px;
+}
+.experience_element1{
+    display:inline-flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.experience_element1 .element1{
+    display: flex;
+    flex-direction: column;
+}
+.experience_element1 img{
+    width: 25px;
+    height: 20px;
+}
+.experience_element1 .element1 h3{
+    text-align: left;
+    font-size: 20px;
+}
+article{
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.4rem;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 12px;
+}
+#experience .experience_div1 p{
+    font-size: 17px;
+    text-align: left;
+}
+/*Project*/
+#project{
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#project p{
+    font-size: 25px;
+    opacity: 80%;
+}
+#project h1{
+    font-size: 50px;
+}
+.project_div1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.project_div2{
+    border-style: groove;
+    border-radius: 25px;
+    border-color: rgb(163, 163, 163);
+    color: black;
+    background-color: white;
+    padding: 20px 20px;
+}
+.project_div2 .first_project1 img{
+    width: 350px;
+    height: 320px;
+    border-radius: 27px;
+}
+.first_project3 button{
+    font-size: 18px;
+    padding: 15px 25px;
+    border-radius: 25px;
+    border-style: groove;
+    cursor: pointer;
+}
+/* CONTACT */
+
+#contact {
+    height: 70vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+#contact p{
+    font-size: 20px;
+    opacity: 80%;
+}
+#contact h1{
+    font-size: 40px;
+}
+#contact .contact_details1{
+    display: flex;
+    justify-content: center;
+    border-radius: 35px;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 12rem auto;
+    padding: 0.5rem;
+}
+#contact .contact_details2{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 12px;
+}
+#contact .contact_details2 p{
+    font-size: larger;
+}
+#contact .contact_details2 a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
+    margin: 5px;
+}
+#contact .contact_details2 img{
+    height: 30px;
+}
+
+#contact .contact_details img{
+    width: 28px;
+    margin-left: 30px;
+    margin-right: 4px;
+}
+
+.contact_details a{
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 22px;
+    margin-right: 20px 0px;
+}
+/*Footer*/
+.footer_nav{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    font-weight: 500;
+    margin: 20px;
+}
+footer p{
+    font-family: 'Courier New', Courier, monospace;
+
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+.footer_nav1 ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    justify-content: center;
+}
